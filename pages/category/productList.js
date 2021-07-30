@@ -4,21 +4,22 @@ import { fetchCategory } from '../../Redux/subReducers/category';
 import ProductTile from './productTile';
 
 function categoryPage(props) {
+	const [productList, setProductList] = useState([]);
 	useEffect(() => {
 		try {
 			props.loadCategory();
-			console.log('category', props.category);
+			setProductList(props.category.productList);
 		} catch (error) {
 			console.error('Error:', error);
 		}
-	});
+	}, []);
 
 	return (
 		<>
 			<h1>Category Name</h1>
-			{/* {exampleArray.map((product) => (
+			{productList.map((product) => (
 				<ProductTile />
-			))} */}
+			))}
 		</>
 	);
 }

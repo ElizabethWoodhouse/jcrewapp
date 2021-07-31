@@ -1,0 +1,26 @@
+.title {
+	font-size: 2em;
+	align-self: center;
+	text-transform: uppercase;
+}
+.product_tiles {
+	width: 70%;
+	align-self: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+.product_tile {
+	width: 30%;
+	height: 30%;
+	margin: 1%;
+	display: flex;
+	flex-direction: column;
+}
+.product_name {
+	font-size: 12px;
+	font-weight: 400;
+}
+.price {
+	font-size: 14px;
+	font-weight: 400;
+}

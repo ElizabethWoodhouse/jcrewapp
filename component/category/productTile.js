@@ -9,7 +9,7 @@ export default function categoryPage(props) {
 	let { productDescription, listPrice, productCode, defaultColorCode } =
 		props.product;
 	return (
-		<Link href='/product'>
+		<Link href={`/${productCode}`}>
 			<div className={styles.product_tile}>
 				<div>
 					<Image

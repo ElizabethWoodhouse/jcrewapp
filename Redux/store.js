@@ -20,11 +20,12 @@ const rootReducer = combineReducers({
 	product: productReducer,
 });
 
-export default () => {
+export default function configureStore() {
 	let store = createStore(
 		persistReducer(persistConfig, rootReducer),
 		applyMiddleware(thunkMiddleware, loggerMiddleware)
 	);
 	let persistor = persistStore(store);
 	return { store, persistor };
-};
+}
+//comment: used redux-persist to have persistent redux store on page refresh

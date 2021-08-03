@@ -32,6 +32,7 @@ function productListPage(props) {
 	);
 }
 
+
 const mapState = (state) => ({
 	category: state.category,
 	productList: state.productList,

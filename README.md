@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# J.Crew Application
 
-## Getting Started
+## Table of Contents
 
-First, run the development server:
+1.  [General Info](#general-info)
+2.  [Technologies](#technologies)
+3.  [Getting Started](#Getting-Started)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### General Info
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+This application is an simplified version of the category and product page at J.Crew.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Category Page
+<img src="./public/category_page.png" alt="category screenshot" height="400">
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Product page
+<img src="./public/product_page.png" alt="product screenshot" height="400">
 
-## Learn More
+Note: Multiple swatches will show if the jSon has show-all-colors notated as true. To update this logic please go to `[productCode].js` and take out the ternary operation.
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Next.js, React, Redux, Node.js and Javascript.
 
-## Deploy on Vercel
+## Getting-Started
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Running Locally**
+
+    - npm install
+    - Run the Node.js server via node category-server.js 'node category-server.js'
+    - npm run dev
+    - Application will now come up on localhost: 3000

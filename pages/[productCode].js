@@ -92,4 +92,4 @@ const mapDispatch = (dispatch) => ({
 	loadProduct: (code) => dispatch(setProduct(code)),
 });
 
-export default connect(mapState, mapDispatch)(productPage);
+export default connect(mapState, mapDispatch)(ProductPage);

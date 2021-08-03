@@ -1,0 +1,26 @@
+.product_page {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+}
+.product_container {
+	display: flex;
+	width: 50%;
+	height: 50%;
+	align-self: center;
+	justify-content: space-around;
+}
+.product_info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.swatches {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.swatch {
+	cursor: pointer;
+}

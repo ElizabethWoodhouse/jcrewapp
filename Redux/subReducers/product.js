@@ -14,7 +14,6 @@ export const setProduct = (code) => (dispatch, getState) => {
 				return el.productCode === code;
 			});
 		}
-		console.log(product, 'PRODUCT');
 		dispatch(setCurrentProduct(product));
 	} catch (error) {
 		console.error('Error', error);

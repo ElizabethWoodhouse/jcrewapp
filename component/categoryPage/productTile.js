@@ -3,8 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../../styles/productList.module.css';
 
-//next steps: productPrice, if discounted show discount % to the side in red
-
 export default function categoryPage(props) {
 	let { productDescription, listPrice, productCode, defaultColorCode } =
 		props.product;

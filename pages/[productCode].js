@@ -5,7 +5,7 @@ import { setProduct } from '../Redux/subReducers/product';
 import styles from '../styles/productPage.module.css';
 import Image from 'next/image';
 
-function productPage(props) {
+function ProductPage(props) {
 	const [products, setProducts] = useState([]);
 	const [currentColor, setcurrentColor] = useState('');
 	const [productDescription, setProductDescription] = useState('');

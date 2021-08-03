@@ -5,7 +5,7 @@ import { fetchCategory } from '../../Redux/subReducers/category';
 import { compressList } from './compressProductList';
 import ProductTile from './productTile';
 
-function ProductListPage(props) {
+function productListPage(props) {
 	const [productList, setProductList] = useState([]);
 	const [header, setHeader] = useState('');
 	useEffect(() => {

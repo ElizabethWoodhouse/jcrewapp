@@ -32,6 +32,7 @@ function ProductListPage(props) {
 	);
 }
 
+
 const mapState = (state) => ({
 	category: state.category,
 	productList: state.productList,
@@ -41,4 +42,4 @@ const mapDispatch = (dispatch) => ({
 	loadCategory: () => dispatch(fetchCategory()),
 });
 
-export default connect(mapState, mapDispatch)(ProductListPage);
+export default connect(mapState, mapDispatch)(productListPage);

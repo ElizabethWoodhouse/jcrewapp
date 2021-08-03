@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import ProductList from '../component/category/productList';
+import ProductList from '../component/categoryPage/productList';
 
 export default function Home() {
 	return (

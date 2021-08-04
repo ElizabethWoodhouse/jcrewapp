@@ -33,6 +33,6 @@ Note: Multiple swatches will show if the jSon has show-all-colors notated as tru
 **Running Locally**
 
     - npm install
-    - Run the Node.js server via node category-server.js 'node category-server.js'
-    - npm run dev
+    - cd into server folder and run Run the Node.js server via node category-server.js 'node category-server.js'
+    - npm run dev in main
     - Application will now come up on localhost: 3000
